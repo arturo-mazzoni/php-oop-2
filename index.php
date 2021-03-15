@@ -22,6 +22,24 @@ $user_1->username = 'MarioBros98';
 $user_1->email = 'mario.rossi@gmail.com';
 $user_1->password = 'MarioMario98';
 
+class Blogger extends User {
+  public $blogName;
+  public $subscriptions;
+
+  public function __construct($_id, $_blogName) {
+    parent::__construct($_id);
+    $this->blogName = $_blogName;
+  }
+
+  public function setSubsriptions($_subscriptions) {
+    $this->subscriptions = $_subscriptions;
+  }
+
+  public function getSubsriptions() {
+    return $this->subscriptions;
+  }
+}
+
 $user_2 = new User('adss89798kjhn');
 $user_2->nome = 'Franco';
 $user_2->cognome = 'Neri';
