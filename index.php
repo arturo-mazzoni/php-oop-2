@@ -1,18 +1,8 @@
 <?php
 
-class User {
-  public $id;
-  public $nome;
-  public $dataDiNascita;
-  public $nazionalita;
-  public $username;
-  public $email;
-  public $password;
+require 'User.php';
+require 'Blogger.php';
 
-  public function __construct($_id) {
-    $this->id = $_id;
-  }
-}
 
 $user_1 = new User('jkd123lkj');
 $user_1->nome = 'Mario';
@@ -22,29 +12,12 @@ $user_1->username = 'MarioBros98';
 $user_1->email = 'mario.rossi@gmail.com';
 $user_1->password = 'MarioMario98';
 
-class Blogger extends User {
-  public $blogName;
-  public $subscriptions;
-
-  public function __construct($_id, $_blogName) {
-    parent::__construct($_id);
-    $this->blogName = $_blogName;
-  }
-
-  public function setSubsriptions($_subscriptions) {
-    $this->subscriptions = $_subscriptions;
-  }
-
-  public function getSubsriptions() {
-    return $this->subscriptions;
-  }
-}
-
-$user_2 = new User('adss89798kjhn');
+$user_2 = new Blogger('adss89798kjhn', 'Il blog più bello del mondo');
+$user_2->subscriptions = '257000';
 $user_2->nome = 'Franco';
 $user_2->cognome = 'Neri';
 $user_2->dataDiNascita = '1972-04-08';
-$user_2->username = 'FrancoNeri72';
+$user_2->username = 'Il blogger più bravo del mondo';
 $user_2->email = 'franco.nari@hotmail.com';
 $user_2->password = 'francofranco72';
 
@@ -60,17 +33,34 @@ $user_2->password = 'francofranco72';
 </head>
 <body>
 
-<h2>
-  <?php echo 'Nome Utente: '. $user_1->nome. ''. $user_1->cognome ?>
-</h2>
+  <div class="user">
+    <h2>
+      <?php echo 'Nome Utente: '. $user_1->nome. ''. $user_1->cognome ?>
+    </h2>
+    
+    <h3>
+      <?php echo 'Username: '. $user_1->username ?>
+    </h3>
+    
+    <h3>
+      <?php echo 'ID Utente: '. $user_1->id ?>
+    </h3>
+  </div>
 
-<h3>
-  <?php echo 'Username: '. $user_1->username ?>
-</h3>
+  <div class="blogger">
+    <h2>
+      <?php echo 'Nome Blog: '. $user_2->blogName ?>
+    </h2>
+    
+    <h3>
+      <?php echo 'Username: '. $user_2->username ?>
+    </h3>
 
-<h3>
-  <?php echo 'ID Utente: '. $user_1->id ?>
-</h3>
-  
+    <h3>
+      <?php echo 'Numero di iscritti: '. $user_2->subscriptions ?>
+    </h3>
+  </div>
+
 </body>
 </html>
+

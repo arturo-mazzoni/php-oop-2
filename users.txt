@@ -9,4 +9,22 @@ Username		      varchar(30)
 E-mail			      varchar(50)
 Password		      varchar(30)
 
+
+
+
+
+Blogger
+
+id          		  INT
+Nome del Blog     varchar(100)
+Numero Iscritti   INT
+Nome			        varchar(50)
+Cognome			      varchar(50)
+Data di nascita		DATE
+Nazionalità		    varchar(30)
+Username		      varchar(30)
+E-mail			      varchar(50)
+Password		      varchar(30)
+
+
     
