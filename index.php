@@ -20,7 +20,7 @@ $user_2->username = 'Il blogger più bravo del mondo';
 $user_2->email = 'franco.nari@hotmail.com';
 $user_2->password = 'francofranco72';
 
-user_2->setSubsriptions(123000);
+$user_2->setSubsriptions(123000);
 $subscriptions = user_2->getSubsriptions();
 
 ?>
