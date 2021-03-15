@@ -1,0 +1,12 @@
+User
+
+id          		  INT
+Nome			        varchar(50)
+Cognome			      varchar(50)
+Data di nascita		DATE
+Nazionalità		    varchar(30)
+Username		      varchar(30)
+E-mail			      varchar(50)
+Password		      varchar(30)
+
+    
