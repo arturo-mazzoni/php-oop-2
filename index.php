@@ -8,6 +8,7 @@ $user_1 = new User('jkd123lkj');
 $user_1->nome = 'Mario';
 $user_1->cognome = 'Rossi';
 $user_1->dataDiNascita = '1998-12-23';
+$user_1->nazionalita = 'Italiana';
 $user_1->username = 'MarioBros98';
 $user_1->email = 'mario.rossi@gmail.com';
 $user_1->password = 'MarioMario98';
@@ -16,8 +17,9 @@ $user_2 = new Blogger('adss89798kjhn', 'Il blog più bello del mondo');
 $user_2->nome = 'Franco';
 $user_2->cognome = 'Neri';
 $user_2->dataDiNascita = '1972-04-08';
+$user_1->nazionalita = 'Italiana';
 $user_2->username = 'Il blogger più bravo del mondo';
-$user_2->email = 'franco.nari@hotmail.com';
+$user_2->email = 'franco.neri@hotmail.com';
 $user_2->password = 'francofranco72';
 
 $user_2->setSubsriptions(123000);
