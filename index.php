@@ -1,7 +1,7 @@
 <?php
 
-require 'User.php';
-require 'Blogger.php';
+require_once 'User.php';
+require_once 'Blogger.php';
 
 
 $user_1 = new User('jkd123lkj');
